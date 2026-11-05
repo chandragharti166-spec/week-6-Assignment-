@@ -1,4 +1,8 @@
 
+/* ========================================
+   SAMSUNG-INSPIRED COLORS
+   ======================================== */
+
 :root {
     --blue: #1428A0;
     --bright-blue: #2948D8;
@@ -11,6 +15,10 @@
     --white: #FFFFFF;
 }
 
+/* ========================================
+   RESET
+   ======================================== */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -20,6 +28,10 @@
 html {
     scroll-behavior: smooth;
 }
+
+/* ========================================
+   BODY
+   ======================================== */
 
 body {
     min-height: 100vh;
@@ -41,6 +53,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--white);
 }
+
+/* ========================================
+   WEEK 07 - STEP 1
+   NAVIGATION MENU FLEXBOX
+   ======================================== */
 
 .navigation {
     display: flex;
@@ -76,19 +93,29 @@ body {
     background-color: var(--blue);
 }
 
+/* ========================================
+   WEEK 07 - STEP 2
+   HORIZONTAL CARD LAYOUT
+   ======================================== */
+
 .content-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
+    flex-wrap: wrap;
     gap: 24px;
 
     width: 100%;
     max-width: 1000px;
 }
 
+/* ========================================
+   BUSINESS CARDS
+   ======================================== */
+
 .business-card {
-    flex: 1 1 0;
+    flex: 1 1 320px;
     min-width: 0;
     max-width: 488px;
     padding: 28px;
@@ -107,7 +134,15 @@ body {
     border-top-color: var(--bright-blue);
 }
 
+/* ========================================
+   PROFILE INFORMATION
+   ======================================== */
+
 .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     text-align: center;
 }
 
@@ -127,6 +162,7 @@ body {
     font-size: 32px;
     font-weight: 700;
     letter-spacing: -0.8px;
+
     overflow-wrap: anywhere;
 }
 
@@ -137,6 +173,7 @@ body {
     font-size: 28px;
     font-weight: 700;
     letter-spacing: -0.5px;
+
     overflow-wrap: anywhere;
 }
 
@@ -156,26 +193,37 @@ body {
     font-size: 13px;
 }
 
+/* ========================================
+   WEEK 07 - STEP 3
+   PROFILE IMAGE - CENTERED
+   ======================================== */
 
 .profile-image {
     display: block;
-    margin: 20px auto 0;
 
+    width: 250px;
+    height: 300px;
 
     max-width: 100%;
-    width: 250px;
-    height: auto;
+    margin: 20px auto 0;
 
     object-fit: cover;
+    object-position: center;
+
     border: 2px solid var(--blue);
     border-radius: 12px;
 }
+
+/* Keep all images within their containers */
 
 img {
     max-width: 100%;
     height: auto;
 }
 
+/* ========================================
+   DIVIDER
+   ======================================== */
 
 hr {
     margin: 28px 0;
@@ -184,6 +232,9 @@ hr {
     border-top: 1px solid var(--border);
 }
 
+/* ========================================
+   CONTACT SECTION
+   ======================================== */
 
 .contact h2 {
     margin-bottom: 18px;
@@ -193,6 +244,9 @@ hr {
     font-weight: 600;
 }
 
+/* ========================================
+   CONTACT FORM
+   ======================================== */
 
 .contact-form {
     display: flex;
@@ -206,6 +260,7 @@ hr {
     border-radius: 10px;
 }
 
+/* First and Last Name */
 
 .name-fields {
     display: grid;
@@ -213,6 +268,7 @@ hr {
     gap: 12px;
 }
 
+/* Input Fields */
 
 .contact-form input {
     width: 100%;
@@ -239,6 +295,9 @@ hr {
     border-color: var(--bright-blue);
 }
 
+/* ========================================
+   SEND MESSAGE BUTTON
+   ======================================== */
 
 .contact-form button {
     width: 100%;
@@ -268,7 +327,9 @@ hr {
     outline-offset: 3px;
 }
 
-
+/* ========================================
+   FOOTER
+   ======================================== */
 
 footer {
     margin-top: 24px;
@@ -283,8 +344,12 @@ footer p {
     margin-bottom: 0;
 }
 
+/* ========================================
+   RESPONSIVE LAYOUT
+   ======================================== */
 
 @media (max-width: 700px) {
+
     body {
         padding: 20px 14px;
         gap: 20px;
@@ -311,7 +376,12 @@ footer p {
     }
 }
 
+/* ========================================
+   SMALL MOBILE SCREENS
+   ======================================== */
+
 @media (max-width: 400px) {
+
     .navigation {
         gap: 2px;
         padding: 10px 5px;
@@ -336,5 +406,10 @@ footer p {
 
     #profile-name {
         font-size: 26px;
+    }
+
+    .profile-image {
+        width: 220px;
+        height: 270px;
     }
 }
