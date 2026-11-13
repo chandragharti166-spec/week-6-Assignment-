@@ -1,23 +1,26 @@
 
 /* ========================================
-   SAMSUNG-INSPIRED COLORS
+   SAMSUNG-INSPIRED PORTFOLIO
+   CHANDRA GHARTI
    ======================================== */
+
+/* 1. COLORS */
 
 :root {
     --blue: #1428A0;
     --bright-blue: #2948D8;
     --dark-blue: #0B176B;
+
     --black: #050505;
     --card-bg: #111318;
     --form-bg: #090B10;
+
     --border: #292D38;
     --gray: #A7ACB8;
     --white: #FFFFFF;
 }
 
-/* ========================================
-   RESET
-   ======================================== */
+/* 2. RESET */
 
 * {
     box-sizing: border-box;
@@ -29,18 +32,16 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ========================================
-   BODY
-   ======================================== */
+/* 3. BODY */
 
 body {
     min-height: 100vh;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 28px;
 
+    gap: 28px;
     padding: 30px 20px;
 
     background:
@@ -52,32 +53,44 @@ body {
 
     font-family: Arial, Helvetica, sans-serif;
     color: var(--white);
+
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* ========================================
-   WEEK 07 - STEP 1
-   NAVIGATION MENU FLEXBOX
-   ======================================== */
+/* 4. NAVIGATION */
 
 .navigation {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 12px;
+
+    gap: 15px;
 
     width: 100%;
     max-width: 1000px;
-    padding: 14px 20px;
+
+    padding: 12px 18px;
 
     background-color: rgba(17, 19, 24, 0.95);
     border: 1px solid var(--border);
     border-radius: 12px;
 }
 
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
 .navigation a {
-    padding: 8px 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 15px;
 
     color: var(--gray);
     text-decoration: none;
@@ -93,10 +106,41 @@ body {
     background-color: var(--blue);
 }
 
-/* ========================================
-   WEEK 07 - STEP 2
-   HORIZONTAL CARD LAYOUT
-   ======================================== */
+/* 5. THEME BUTTON */
+
+#theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 150px;
+    padding: 11px 16px;
+
+    background-color: var(--blue);
+    color: var(--white);
+
+    border: 1px solid var(--bright-blue);
+    border-radius: 7px;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background-color: var(--bright-blue);
+}
+
+#theme-toggle:focus-visible,
+.navigation a:focus-visible {
+    outline: 2px solid #7890FF;
+    outline-offset: 3px;
+}
+
+/* 6. MAIN CONTENT LAYOUT */
 
 .content-wrapper {
     display: flex;
@@ -104,23 +148,25 @@ body {
     justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;
+
     gap: 24px;
 
     width: 100%;
     max-width: 1000px;
 }
 
-/* ========================================
-   BUSINESS CARDS
-   ======================================== */
+/* 7. BUSINESS CARDS */
 
 .business-card {
     flex: 1 1 320px;
+
     min-width: 0;
     max-width: 488px;
+
     padding: 28px;
 
     background-color: var(--card-bg);
+
     border: 1px solid var(--border);
     border-top: 3px solid var(--blue);
     border-radius: 16px;
@@ -128,15 +174,15 @@ body {
     box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
 
     overflow-wrap: break-word;
+
+    transition: background-color 0.3s ease;
 }
 
 .second-card {
     border-top-color: var(--bright-blue);
 }
 
-/* ========================================
-   PROFILE INFORMATION
-   ======================================== */
+/* 8. PROFILE INFORMATION */
 
 .profile {
     display: flex;
@@ -193,10 +239,7 @@ body {
     font-size: 13px;
 }
 
-/* ========================================
-   WEEK 07 - STEP 3
-   PROFILE IMAGE - CENTERED
-   ======================================== */
+/* 9. PROFILE IMAGE ALIGNMENT */
 
 .profile-image {
     display: block;
@@ -205,6 +248,7 @@ body {
     height: 300px;
 
     max-width: 100%;
+
     margin: 20px auto 0;
 
     object-fit: cover;
@@ -214,16 +258,13 @@ body {
     border-radius: 12px;
 }
 
-/* Keep all images within their containers */
+/* General Image Protection */
 
 img {
     max-width: 100%;
-    height: auto;
 }
 
-/* ========================================
-   DIVIDER
-   ======================================== */
+/* 10. DIVIDER */
 
 hr {
     margin: 28px 0;
@@ -232,9 +273,7 @@ hr {
     border-top: 1px solid var(--border);
 }
 
-/* ========================================
-   CONTACT SECTION
-   ======================================== */
+/* 11. CONTACT SECTION */
 
 .contact h2 {
     margin-bottom: 18px;
@@ -244,15 +283,13 @@ hr {
     font-weight: 600;
 }
 
-/* ========================================
-   CONTACT FORM
-   ======================================== */
+/* 12. CONTACT FORM */
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 12px;
 
+    gap: 12px;
     padding: 18px;
 
     background-color: var(--form-bg);
@@ -260,22 +297,20 @@ hr {
     border-radius: 10px;
 }
 
-/* First and Last Name */
-
 .name-fields {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
 }
 
-/* Input Fields */
-
 .contact-form input {
     width: 100%;
     min-width: 0;
+
     padding: 13px 12px;
 
     background-color: #141720;
+
     border: 1px solid #343A49;
     border-radius: 7px;
     outline: none;
@@ -295,9 +330,7 @@ hr {
     border-color: var(--bright-blue);
 }
 
-/* ========================================
-   SEND MESSAGE BUTTON
-   ======================================== */
+/* 13. SEND MESSAGE BUTTON */
 
 .contact-form button {
     width: 100%;
@@ -321,21 +354,14 @@ hr {
     background-color: var(--bright-blue);
 }
 
-.contact-form button:focus-visible,
-.navigation a:focus-visible {
-    outline: 2px solid #7890FF;
-    outline-offset: 3px;
-}
-
-/* ========================================
-   FOOTER
-   ======================================== */
+/* 14. FOOTER */
 
 footer {
     margin-top: 24px;
 
     text-align: center;
     color: #747B8B;
+
     font-size: 11px;
     line-height: 1.6;
 }
@@ -345,7 +371,76 @@ footer p {
 }
 
 /* ========================================
-   RESPONSIVE LAYOUT
+   WEEK 11: DARK MODE
+   ======================================== */
+
+body.dark-mode {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+/* Dark Navigation */
+
+body.dark-mode .navigation {
+    background-color: #050505;
+    border-color: #444444;
+}
+
+/* Dark Cards - Preserve Blue Top Borders */
+
+body.dark-mode .business-card {
+    background-color: #080808;
+    border-color: #444444;
+    border-top-color: var(--blue);
+}
+
+body.dark-mode .business-card.second-card {
+    border-top-color: var(--bright-blue);
+}
+
+/* Dark Profile Text */
+
+body.dark-mode .card-info {
+    color: #D0D0D0;
+}
+
+body.dark-mode .location {
+    color: #AAAAAA;
+}
+
+body.dark-mode .label {
+    color: #8FA3FF;
+}
+
+/* Dark Contact Form */
+
+body.dark-mode .contact-form {
+    background-color: #050505;
+    border-color: #444444;
+}
+
+body.dark-mode .contact-form input {
+    background-color: #111111;
+    border-color: #444444;
+    color: #FFFFFF;
+}
+
+body.dark-mode .contact-form input::placeholder {
+    color: #999999;
+}
+
+/* Dark Divider and Footer */
+
+body.dark-mode hr {
+    border-top-color: #444444;
+}
+
+body.dark-mode footer {
+    color: #999999;
+}
+
+/* ========================================
+   15. TABLET RESPONSIVE DESIGN
    ======================================== */
 
 @media (max-width: 700px) {
@@ -364,6 +459,7 @@ footer p {
         width: 100%;
         max-width: 480px;
         flex: 1 1 auto;
+
         padding: 24px;
     }
 
@@ -377,23 +473,26 @@ footer p {
 }
 
 /* ========================================
-   SMALL MOBILE SCREENS
+   16. SMALL MOBILE SCREENS
    ======================================== */
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
 
     .navigation {
-        gap: 2px;
-        padding: 10px 5px;
+        justify-content: center;
+        gap: 10px;
     }
 
-    .navigation a {
-        padding: 9px 10px;
-        font-size: 13px;
+    .nav-links {
+        width: 100%;
+    }
+
+    #theme-toggle {
+        width: 100%;
     }
 
     .business-card {
-        padding: 18px;
+        padding: 20px;
     }
 
     .name-fields {
@@ -404,12 +503,16 @@ footer p {
         padding: 14px;
     }
 
+    .profile-image {
+        width: 220px;
+        height: 270px;
+    }
+
     #profile-name {
         font-size: 26px;
     }
 
-    .profile-image {
-        width: 220px;
-        height: 270px;
+    #about-name {
+        font-size: 24px;
     }
 }
