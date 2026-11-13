@@ -4,23 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Business Card | Chandra Gharti</title>
+
+    <title>Chandra Gharti | Personal Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Week 07 - Step 1: Navigation Menu -->
+    <!-- Navigation -->
     <nav class="navigation">
-        <a href="#profile-name">Home</a>
-        <a href="#contact">Contact</a>
-        <a href="#about-name">About</a>
+        <div class="nav-links">
+            <a href="#profile-name">Home</a>
+            <a href="#contact">Contact</a>
+            <a href="#about-name">About</a>
+        </div>
+
+        <!-- Week 11: Theme Toggle -->
+        <button id="theme-toggle" type="button">
+            Toggle Dark Mode
+        </button>
     </nav>
 
-    <!-- Week 07 - Step 2: Flexbox Content Wrapper -->
+    <!-- Main Content -->
     <main class="content-wrapper">
 
-        <!-- Card 1: Personal Business Card -->
+        <!-- Personal Business Card -->
         <section class="business-card">
 
             <div class="profile">
@@ -34,7 +43,7 @@
 
                 <p class="location">Seoul, Korea</p>
 
-                <!-- Week 07 - Step 3: Profile Image -->
+                <!-- Profile Image -->
                 <img
                     class="profile-image"
                     src="profile.jpg"
@@ -44,8 +53,8 @@
 
             <hr>
 
-            <!-- Contact Form -->
-            <div class="contact" id="contact">
+            <!-- Contact Section -->
+            <section class="contact" id="contact">
                 <h2>Get in Touch</h2>
 
                 <form class="contact-form">
@@ -77,7 +86,7 @@
 
                     <button type="submit">Send Message</button>
                 </form>
-            </div>
+            </section>
 
             <footer>
                 <p>Computer Engineering • Web Development</p>
@@ -85,7 +94,7 @@
 
         </section>
 
-        <!-- Card 2: About Me -->
+        <!-- About Me Card -->
         <section class="business-card second-card" id="about">
 
             <div class="profile">
@@ -102,7 +111,7 @@
 
             <hr>
 
-            <div class="contact">
+            <section class="contact">
                 <h2>My Goals</h2>
 
                 <p class="card-info">
@@ -112,7 +121,7 @@
                     applications. My goal is to become a skilled
                     software engineer and develop innovative solutions.
                 </p>
-            </div>
+            </section>
 
             <footer>
                 <p>Learning • Creating • Growing</p>
@@ -122,7 +131,7 @@
 
     </main>
 
-    <!-- Week 10 - JavaScript -->
+    <!-- Week 10 and Week 11 JavaScript -->
     <script src="script.js"></script>
 
 </body>
