@@ -1,11 +1,11 @@
 
-// ========================================
-// WEEK 10: JS BASICS & CONTROL FLOW
-// Student: Chandra Gharti
-// ========================================
+/* ========================================
+   WEEK 10: JS BASICS & CONTROL FLOW
+   Student: Chandra Gharti
+   ======================================== */
 
 
-// PART 1: TIME-BASED GREETING
+/* PART 1: TIME-BASED GREETING */
 
 let userName = prompt("What is your name?");
 
@@ -26,7 +26,7 @@ if (currentHour < 12) {
 }
 
 
-// PART 2: AGE AND DAYS LIVED VERIFICATION
+/* PART 2: AGE AND DAYS LIVED VERIFICATION */
 
 let birthYear = Number(prompt("What year were you born?"));
 
@@ -40,7 +40,6 @@ console.log(
     "You have lived for approximately " + daysLived + " days!"
 );
 
-
 if (age >= 18) {
 
     console.log("You are an adult.");
@@ -48,5 +47,29 @@ if (age >= 18) {
 } else {
 
     console.log("You are a minor.");
+
+}
+
+
+/* ========================================
+   WEEK 11: DOM & DYNAMIC EVENT HANDLING
+   DARK MODE TOGGLE
+   ======================================== */
+
+// Step 1: Select the theme button
+
+let themeButton = document.querySelector("#theme-toggle");
+
+// Step 2: Listen for button clicks
+
+if (themeButton) {
+
+    themeButton.addEventListener("click", function() {
+
+        // Step 3: Toggle dark mode on and off
+
+        document.body.classList.toggle("dark-mode");
+
+    });
 
 }
