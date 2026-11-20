@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Chandra Gharti | Personal Portfolio</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,6 +16,8 @@
             <a href="#profile-name">Home</a>
             <a href="#contact">Contact</a>
             <a href="#about-name">About</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#gallery">Gallery</a>
         </div>
 
         <!-- Week 11: Theme Toggle -->
@@ -26,7 +26,6 @@
         </button>
     </nav>
 
-    <!-- Main Content -->
     <main class="content-wrapper">
 
         <!-- Personal Business Card -->
@@ -37,13 +36,9 @@
 
                 <h1 id="profile-name">Chandra Gharti</h1>
 
-                <p class="card-info">
-                    Computer Engineering Student
-                </p>
-
+                <p class="card-info">Computer Engineering Student</p>
                 <p class="location">Seoul, Korea</p>
 
-                <!-- Profile Image -->
                 <img
                     class="profile-image"
                     src="profile.jpg"
@@ -102,10 +97,7 @@
 
                 <h2 id="about-name">Chandra Gharti</h2>
 
-                <p class="card-info">
-                    Aspiring Web Developer
-                </p>
-
+                <p class="card-info">Aspiring Web Developer</p>
                 <p class="location">Seoul, Korea</p>
             </div>
 
@@ -123,6 +115,39 @@
                 </p>
             </section>
 
+            <hr>
+
+            <!-- Week 12: Hobbies -->
+            <section class="contact" id="hobbies">
+                <h2>My Hobbies</h2>
+                <p class="card-info">
+                    Here are some activities I enjoy.
+                </p>
+
+                <div id="hobby-list"></div>
+            </section>
+
+            <hr>
+
+            <!-- Week 12: Image Gallery -->
+            <section class="contact gallery-section" id="gallery">
+                <h2>My Photo Gallery</h2>
+
+                <div class="gallery-container">
+                    <img
+                        id="gallery-image"
+                        src=""
+                        alt="Gallery photograph"
+                    >
+                </div>
+
+                <p id="photo-counter">Photo 1 of 5</p>
+
+                <button id="next-photo" type="button">
+                    Next Photo
+                </button>
+            </section>
+
             <footer>
                 <p>Learning • Creating • Growing</p>
             </footer>
@@ -131,8 +156,6 @@
 
     </main>
 
-    <!-- Week 10 and Week 11 JavaScript -->
     <script src="script.js"></script>
-
 </body>
 </html>
