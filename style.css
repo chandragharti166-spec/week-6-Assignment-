@@ -2,7 +2,7 @@
 /* ========================================
    SAMSUNG-INSPIRED PORTFOLIO
    CHANDRA GHARTI
-   ======================================== */
+======================================== */
 
 /* 1. COLORS */
 
@@ -32,24 +32,19 @@ html {
     scroll-behavior: smooth;
 }
 
-/* 3. BODY */
-
 body {
     min-height: 100vh;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
     gap: 28px;
     padding: 30px 20px;
 
-    background:
-        radial-gradient(
-            circle at top,
-            #111B43 0%,
-            var(--black) 55%
-        );
+    background: radial-gradient(
+        circle at top,
+        #111B43 0%,
+        var(--black) 55%
+    );
 
     font-family: Arial, Helvetica, sans-serif;
     color: var(--white);
@@ -57,19 +52,17 @@ body {
     transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* 4. NAVIGATION */
+/* 3. NAVIGATION */
 
 .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-
     gap: 15px;
 
     width: 100%;
     max-width: 1000px;
-
     padding: 12px 18px;
 
     background-color: rgba(17, 19, 24, 0.95);
@@ -90,7 +83,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    padding: 10px 15px;
+    padding: 10px 12px;
 
     color: var(--gray);
     text-decoration: none;
@@ -106,13 +99,15 @@ body {
     background-color: var(--blue);
 }
 
-/* 5. THEME BUTTON */
+/* 4. BUTTONS */
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
 #theme-toggle {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
     min-width: 150px;
     padding: 11px 16px;
 
@@ -122,25 +117,21 @@ body {
     border: 1px solid var(--bright-blue);
     border-radius: 7px;
 
-    font-family: inherit;
     font-size: 13px;
     font-weight: 700;
-
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 #theme-toggle:hover {
     background-color: var(--bright-blue);
 }
 
-#theme-toggle:focus-visible,
-.navigation a:focus-visible {
+button:focus-visible,
+a:focus-visible {
     outline: 2px solid #7890FF;
     outline-offset: 3px;
 }
 
-/* 6. MAIN CONTENT LAYOUT */
+/* 5. MAIN CONTENT */
 
 .content-wrapper {
     display: flex;
@@ -155,11 +146,10 @@ body {
     max-width: 1000px;
 }
 
-/* 7. BUSINESS CARDS */
+/* 6. BUSINESS CARDS */
 
 .business-card {
     flex: 1 1 320px;
-
     min-width: 0;
     max-width: 488px;
 
@@ -172,29 +162,24 @@ body {
     border-radius: 16px;
 
     box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
-
     overflow-wrap: break-word;
-
-    transition: background-color 0.3s ease;
 }
 
 .second-card {
     border-top-color: var(--bright-blue);
 }
 
-/* 8. PROFILE INFORMATION */
+/* 7. PROFILE */
 
 .profile {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     text-align: center;
 }
 
 .label {
     margin-bottom: 18px;
-
     color: #7890FF;
     font-size: 11px;
     font-weight: 700;
@@ -203,29 +188,23 @@ body {
 
 #profile-name {
     margin-bottom: 10px;
-
     color: var(--white);
     font-size: 32px;
     font-weight: 700;
     letter-spacing: -0.8px;
-
     overflow-wrap: anywhere;
 }
 
 #about-name {
     margin-bottom: 10px;
-
     color: var(--white);
     font-size: 28px;
     font-weight: 700;
-    letter-spacing: -0.5px;
-
     overflow-wrap: anywhere;
 }
 
 .card-info {
     margin-bottom: 12px;
-
     color: var(--gray);
     font-size: 15px;
     line-height: 1.7;
@@ -234,19 +213,17 @@ body {
 .location {
     margin-top: 4px;
     margin-bottom: 18px;
-
     color: #858B99;
     font-size: 13px;
 }
 
-/* 9. PROFILE IMAGE ALIGNMENT */
+/* 8. PROFILE IMAGE */
 
 .profile-image {
     display: block;
 
     width: 250px;
     height: 300px;
-
     max-width: 100%;
 
     margin: 20px auto 0;
@@ -258,38 +235,34 @@ body {
     border-radius: 12px;
 }
 
-/* General Image Protection */
-
 img {
     max-width: 100%;
 }
 
-/* 10. DIVIDER */
+/* 9. DIVIDER */
 
 hr {
     margin: 28px 0;
-
     border: none;
     border-top: 1px solid var(--border);
 }
 
-/* 11. CONTACT SECTION */
+/* 10. CONTACT */
 
 .contact h2 {
     margin-bottom: 18px;
-
     color: var(--white);
     font-size: 20px;
     font-weight: 600;
 }
 
-/* 12. CONTACT FORM */
+/* 11. CONTACT FORM */
 
 .contact-form {
     display: flex;
     flex-direction: column;
-
     gap: 12px;
+
     padding: 18px;
 
     background-color: var(--form-bg);
@@ -306,11 +279,9 @@ hr {
 .contact-form input {
     width: 100%;
     min-width: 0;
-
     padding: 13px 12px;
 
     background-color: #141720;
-
     border: 1px solid #343A49;
     border-radius: 7px;
     outline: none;
@@ -318,8 +289,6 @@ hr {
     color: var(--white);
     font-family: inherit;
     font-size: 14px;
-
-    transition: border-color 0.2s ease;
 }
 
 .contact-form input::placeholder {
@@ -330,9 +299,8 @@ hr {
     border-color: var(--bright-blue);
 }
 
-/* 13. SEND MESSAGE BUTTON */
-
-.contact-form button {
+.contact-form button,
+#next-photo {
     width: 100%;
     padding: 13px;
     margin-top: 4px;
@@ -345,23 +313,78 @@ hr {
 
     font-size: 14px;
     font-weight: 700;
-    cursor: pointer;
-
-    transition: background-color 0.2s ease;
 }
 
-.contact-form button:hover {
+.contact-form button:hover,
+#next-photo:hover {
     background-color: var(--bright-blue);
+}
+
+/* 12. WEEK 12: HOBBIES */
+
+#hobby-list ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+
+    list-style: none;
+}
+
+#hobby-list li {
+    padding: 13px 10px;
+
+    background-color: var(--form-bg);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--blue);
+    border-radius: 8px;
+
+    color: var(--gray);
+    font-size: 14px;
+    text-align: center;
+}
+
+/* 13. WEEK 12: PHOTO GALLERY */
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 300px;
+    padding: 8px;
+
+    background-color: #050505;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+#gallery-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+    border-radius: 6px;
+}
+
+#photo-counter {
+    margin: 14px 0;
+    color: var(--gray);
+    font-size: 13px;
+    text-align: center;
 }
 
 /* 14. FOOTER */
 
 footer {
     margin-top: 24px;
-
     text-align: center;
     color: #747B8B;
-
     font-size: 11px;
     line-height: 1.6;
 }
@@ -372,21 +395,17 @@ footer p {
 
 /* ========================================
    WEEK 11: DARK MODE
-   ======================================== */
+======================================== */
 
 body.dark-mode {
     background: #000000;
     color: #FFFFFF;
 }
 
-/* Dark Navigation */
-
 body.dark-mode .navigation {
     background-color: #050505;
     border-color: #444444;
 }
-
-/* Dark Cards - Preserve Blue Top Borders */
 
 body.dark-mode .business-card {
     background-color: #080808;
@@ -397,8 +416,6 @@ body.dark-mode .business-card {
 body.dark-mode .business-card.second-card {
     border-top-color: var(--bright-blue);
 }
-
-/* Dark Profile Text */
 
 body.dark-mode .card-info {
     color: #D0D0D0;
@@ -412,9 +429,8 @@ body.dark-mode .label {
     color: #8FA3FF;
 }
 
-/* Dark Contact Form */
-
-body.dark-mode .contact-form {
+body.dark-mode .contact-form,
+body.dark-mode #hobby-list li {
     background-color: #050505;
     border-color: #444444;
 }
@@ -429,8 +445,6 @@ body.dark-mode .contact-form input::placeholder {
     color: #999999;
 }
 
-/* Dark Divider and Footer */
-
 body.dark-mode hr {
     border-top-color: #444444;
 }
@@ -441,10 +455,9 @@ body.dark-mode footer {
 
 /* ========================================
    15. TABLET RESPONSIVE DESIGN
-   ======================================== */
+======================================== */
 
 @media (max-width: 700px) {
-
     body {
         padding: 20px 14px;
         gap: 20px;
@@ -459,7 +472,6 @@ body.dark-mode footer {
         width: 100%;
         max-width: 480px;
         flex: 1 1 auto;
-
         padding: 24px;
     }
 
@@ -474,10 +486,9 @@ body.dark-mode footer {
 
 /* ========================================
    16. SMALL MOBILE SCREENS
-   ======================================== */
+======================================== */
 
 @media (max-width: 500px) {
-
     .navigation {
         justify-content: center;
         gap: 10px;
@@ -514,5 +525,13 @@ body.dark-mode footer {
 
     #about-name {
         font-size: 24px;
+    }
+
+    #hobby-list ul {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-container {
+        height: 240px;
     }
 }
