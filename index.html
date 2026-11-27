@@ -1,59 +1,88 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Chandra Gharti | Personal Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
+    <!-- WEEK 07: NAVIGATION -->
+
     <nav class="navigation">
+
         <div class="nav-links">
+
             <a href="#profile-name">Home</a>
             <a href="#contact">Contact</a>
             <a href="#about-name">About</a>
             <a href="#hobbies">Hobbies</a>
             <a href="#gallery">Gallery</a>
+
         </div>
 
-        <!-- Week 11: Theme Toggle -->
+        <!-- WEEK 11: DARK MODE -->
+
         <button id="theme-toggle" type="button">
             Toggle Dark Mode
         </button>
+
     </nav>
+
+
+    <!-- MAIN CONTENT -->
 
     <main class="content-wrapper">
 
-        <!-- Personal Business Card -->
+
+        <!-- PERSONAL BUSINESS CARD -->
+
         <section class="business-card">
 
             <div class="profile">
+
                 <p class="label">ONLINE BUSINESS CARD</p>
 
                 <h1 id="profile-name">Chandra Gharti</h1>
 
-                <p class="card-info">Computer Engineering Student</p>
-                <p class="location">Seoul, Korea</p>
+                <p class="card-info">
+                    Computer Engineering Student
+                </p>
+
+                <p class="location">
+                    Seoul, South Korea
+                </p>
 
                 <img
                     class="profile-image"
                     src="profile.jpg"
                     alt="Profile photo of Chandra Gharti"
                 >
+
             </div>
+
 
             <hr>
 
-            <!-- Contact Section -->
+
+            <!-- CONTACT SECTION -->
+
             <section class="contact" id="contact">
+
+                <p class="label">LET'S CONNECT</p>
+
                 <h2>Get in Touch</h2>
 
                 <form class="contact-form">
+
                     <div class="name-fields">
+
                         <input
                             type="text"
                             name="firstName"
@@ -69,7 +98,9 @@
                             aria-label="Last Name"
                             required
                         >
+
                     </div>
+
 
                     <input
                         type="email"
@@ -79,83 +110,190 @@
                         required
                     >
 
-                    <button type="submit">Send Message</button>
+
+                    <button type="submit">
+                        Send Message
+                    </button>
+
                 </form>
+
             </section>
 
+
             <footer>
-                <p>Computer Engineering • Web Development</p>
+
+                <p>
+                    Computer Engineering • Web Development
+                </p>
+
             </footer>
 
         </section>
 
-        <!-- About Me Card -->
+
+
+        <!-- ABOUT ME CARD -->
+
         <section class="business-card second-card" id="about">
 
+
+            <!-- PROFILE INFORMATION -->
+
             <div class="profile">
+
                 <p class="label">ABOUT ME</p>
 
-                <h2 id="about-name">Chandra Gharti</h2>
+                <h2 id="about-name">
+                    Chandra Gharti
+                </h2>
 
-                <p class="card-info">Aspiring Web Developer</p>
-                <p class="location">Seoul, Korea</p>
+                <p class="card-info">
+                    Aspiring Web Developer
+                </p>
+
+                <p class="location">
+                    Seoul, South Korea
+                </p>
+
             </div>
+
 
             <hr>
 
-            <section class="contact">
+
+            <!-- ABOUT AND GOALS -->
+
+            <section class="about-section">
+
+                <p class="label">MY JOURNEY</p>
+
+                <h2>About Me</h2>
+
+                <p class="card-info">
+
+                    I am a Computer Engineering student
+                    interested in programming, technology,
+                    web development, and discovering new ideas.
+
+                    I enjoy learning new skills, exploring
+                    creative opportunities, and improving
+                    my knowledge through practical experience.
+
+                </p>
+
                 <h2>My Goals</h2>
 
                 <p class="card-info">
-                    I build responsive websites and improve my
-                    software development skills. I enjoy learning
-                    new technologies and creating user-friendly
-                    applications. My goal is to become a skilled
-                    software engineer and develop innovative solutions.
+
+                    My goal is to become a skilled software
+                    engineer and create useful digital
+                    experiences.
+
+                    I want to develop innovative applications,
+                    build meaningful projects, and connect
+                    with people around the world through
+                    technology and creativity.
+
                 </p>
+
             </section>
+
+
 
             <hr>
 
-            <!-- Week 12: Hobbies -->
-            <section class="contact" id="hobbies">
-                <h2>My Hobbies</h2>
-                <p class="card-info">
-                    Here are some activities I enjoy.
+
+            <!-- WEEK 12: HOBBIES AND ARRAYS -->
+
+            <section class="hobbies-section" id="hobbies">
+
+                <p class="label">
+                    WEEK 12 • ARRAYS AND LOOPS
                 </p>
+
+                <h2>My Hobbies</h2>
+
+                <p class="section-description">
+
+                    Activities I enjoy while learning,
+                    exploring, and improving myself.
+
+                </p>
+
+                <!-- JavaScript displays hobbies here -->
 
                 <div id="hobby-list"></div>
+
             </section>
+
+
 
             <hr>
 
-            <!-- Week 12: Image Gallery -->
-            <section class="contact gallery-section" id="gallery">
+
+            <!-- WEEK 12: PHOTO GALLERY -->
+
+            <section class="gallery-section" id="gallery">
+
+                <p class="label">
+                    MY PHOTO COLLECTION
+                </p>
+
                 <h2>My Photo Gallery</h2>
 
+                <p class="section-description">
+
+                    A collection of moments, experiences,
+                    and inspiration.
+
+                </p>
+
+
                 <div class="gallery-container">
+
                     <img
                         id="gallery-image"
                         src=""
                         alt="Gallery photograph"
                     >
+
                 </div>
 
-                <p id="photo-counter">Photo 1 of 5</p>
+
+                <p id="photo-counter">
+                    Photo 1 of 5
+                </p>
+
 
                 <button id="next-photo" type="button">
-                    Next Photo
+
+                    Next Photo →
+
                 </button>
+
             </section>
 
+
+
             <footer>
-                <p>Learning • Creating • Growing</p>
+
+                <p>
+                    Learning • Creating • Growing
+                </p>
+
             </footer>
+
 
         </section>
 
     </main>
 
+
+
+    <!-- JAVASCRIPT -->
+
     <script src="script.js"></script>
+
 </body>
+
 </html>
