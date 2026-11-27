@@ -1,12 +1,14 @@
 
 /* ========================================
    SAMSUNG-INSPIRED PORTFOLIO
-   CHANDRA GHARTI
+   STUDENT: CHANDRA GHARTI
 ======================================== */
 
-/* 1. COLORS */
+
+/* 1. COLOR PALETTE */
 
 :root {
+
     --blue: #1428A0;
     --bright-blue: #2948D8;
     --dark-blue: #0B176B;
@@ -18,26 +20,38 @@
     --border: #292D38;
     --gray: #A7ACB8;
     --white: #FFFFFF;
+
 }
+
 
 /* 2. RESET */
 
 * {
+
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
+
 
 html {
+
     scroll-behavior: smooth;
+
 }
 
+
 body {
+
     min-height: 100vh;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
     gap: 28px;
+
     padding: 30px 20px;
 
     background: radial-gradient(
@@ -47,38 +61,52 @@ body {
     );
 
     font-family: Arial, Helvetica, sans-serif;
+
     color: var(--white);
 
     transition: background 0.3s ease, color 0.3s ease;
+
 }
+
 
 /* 3. NAVIGATION */
 
 .navigation {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+
     gap: 15px;
 
     width: 100%;
     max-width: 1000px;
+
     padding: 12px 18px;
 
     background-color: rgba(17, 19, 24, 0.95);
+
     border: 1px solid var(--border);
     border-radius: 12px;
+
 }
 
+
 .nav-links {
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
     gap: 8px;
+
 }
 
+
 .navigation a {
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -86,29 +114,44 @@ body {
     padding: 10px 12px;
 
     color: var(--gray);
+
     text-decoration: none;
+
     font-size: 14px;
     font-weight: 600;
 
     border-radius: 6px;
+
     transition: 0.2s ease;
+
 }
 
+
 .navigation a:hover {
+
     color: var(--white);
+
     background-color: var(--blue);
+
 }
+
 
 /* 4. BUTTONS */
 
 button {
+
     font-family: inherit;
     cursor: pointer;
+
     transition: background-color 0.3s ease;
+
 }
 
+
 #theme-toggle {
+
     min-width: 150px;
+
     padding: 11px 16px;
 
     background-color: var(--blue);
@@ -119,22 +162,32 @@ button {
 
     font-size: 13px;
     font-weight: 700;
+
 }
 
+
 #theme-toggle:hover {
+
     background-color: var(--bright-blue);
+
 }
+
 
 button:focus-visible,
 a:focus-visible {
+
     outline: 2px solid #7890FF;
     outline-offset: 3px;
+
 }
 
-/* 5. MAIN CONTENT */
+
+/* 5. MAIN LAYOUT */
 
 .content-wrapper {
+
     display: flex;
+
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
@@ -144,12 +197,16 @@ a:focus-visible {
 
     width: 100%;
     max-width: 1000px;
+
 }
+
 
 /* 6. BUSINESS CARDS */
 
 .business-card {
+
     flex: 1 1 320px;
+
     min-width: 0;
     max-width: 488px;
 
@@ -159,71 +216,113 @@ a:focus-visible {
 
     border: 1px solid var(--border);
     border-top: 3px solid var(--blue);
+
     border-radius: 16px;
 
     box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+
     overflow-wrap: break-word;
+
 }
 
+
 .second-card {
+
     border-top-color: var(--bright-blue);
+
 }
+
 
 /* 7. PROFILE */
 
 .profile {
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
     text-align: center;
+
 }
+
 
 .label {
+
     margin-bottom: 18px;
+
     color: #7890FF;
+
     font-size: 11px;
     font-weight: 700;
+
     letter-spacing: 2.5px;
+
 }
+
 
 #profile-name {
+
     margin-bottom: 10px;
+
     color: var(--white);
+
     font-size: 32px;
     font-weight: 700;
+
     letter-spacing: -0.8px;
+
     overflow-wrap: anywhere;
+
 }
+
 
 #about-name {
+
     margin-bottom: 10px;
+
     color: var(--white);
+
     font-size: 28px;
     font-weight: 700;
+
     overflow-wrap: anywhere;
+
 }
+
 
 .card-info {
+
     margin-bottom: 12px;
+
     color: var(--gray);
+
     font-size: 15px;
     line-height: 1.7;
+
 }
 
+
 .location {
+
     margin-top: 4px;
     margin-bottom: 18px;
+
     color: #858B99;
+
     font-size: 13px;
+
 }
+
 
 /* 8. PROFILE IMAGE */
 
 .profile-image {
+
     display: block;
 
     width: 250px;
     height: 300px;
+
     max-width: 100%;
 
     margin: 20px auto 0;
@@ -232,137 +331,299 @@ a:focus-visible {
     object-position: center;
 
     border: 2px solid var(--blue);
+
     border-radius: 12px;
+
 }
 
+
 img {
+
     max-width: 100%;
+
 }
+
 
 /* 9. DIVIDER */
 
 hr {
+
     margin: 28px 0;
+
     border: none;
+
     border-top: 1px solid var(--border);
+
 }
 
-/* 10. CONTACT */
 
-.contact h2 {
+/* 10. SECTION HEADINGS */
+
+.contact h2,
+.about-section h2,
+.hobbies-section h2,
+.gallery-section h2 {
+
     margin-bottom: 18px;
+
     color: var(--white);
+
     font-size: 20px;
     font-weight: 600;
+
 }
+
 
 /* 11. CONTACT FORM */
 
 .contact-form {
+
     display: flex;
     flex-direction: column;
+
     gap: 12px;
 
     padding: 18px;
 
     background-color: var(--form-bg);
+
     border: 1px solid var(--border);
+
     border-radius: 10px;
+
 }
+
 
 .name-fields {
+
     display: grid;
+
     grid-template-columns: repeat(2, minmax(0, 1fr));
+
     gap: 12px;
+
 }
 
+
 .contact-form input {
+
     width: 100%;
     min-width: 0;
+
     padding: 13px 12px;
 
     background-color: #141720;
+
     border: 1px solid #343A49;
+
     border-radius: 7px;
+
     outline: none;
 
     color: var(--white);
+
     font-family: inherit;
     font-size: 14px;
+
 }
+
 
 .contact-form input::placeholder {
+
     color: #777F90;
+
 }
 
+
 .contact-form input:focus {
+
     border-color: var(--bright-blue);
+
 }
+
 
 .contact-form button,
 #next-photo {
+
     width: 100%;
+
     padding: 13px;
+
     margin-top: 4px;
 
     border: none;
     border-radius: 7px;
 
     background-color: var(--blue);
+
     color: var(--white);
 
     font-size: 14px;
     font-weight: 700;
+
 }
+
 
 .contact-form button:hover,
 #next-photo:hover {
+
     background-color: var(--bright-blue);
+
 }
 
-/* 12. WEEK 12: HOBBIES */
+
+/* 12. ABOUT SECTION */
+
+.about-section {
+
+    margin-top: 24px;
+
+}
+
+
+.about-section h2 {
+
+    margin-top: 20px;
+
+}
+
+
+.about-section p {
+
+    line-height: 1.8;
+
+}
+
+
+/* 13. WEEK 12: HOBBIES */
+
+.hobbies-section {
+
+    margin-top: 10px;
+
+}
+
+
+.hobbies-section h2,
+.gallery-section h2 {
+
+    text-align: center;
+
+}
+
+
+.hobbies-section > .label,
+.gallery-section > .label {
+
+    text-align: center;
+
+}
+
+
+.section-description {
+
+    margin-bottom: 20px;
+
+    color: var(--gray);
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    text-align: center;
+
+}
+
+
+#hobby-list {
+
+    margin-top: 22px;
+
+}
+
 
 #hobby-list ul {
+
     display: grid;
+
     grid-template-columns: repeat(2, minmax(0, 1fr));
+
     gap: 12px;
 
     list-style: none;
+
 }
 
+
 #hobby-list li {
+
     padding: 13px 10px;
 
     background-color: var(--form-bg);
+
     border: 1px solid var(--border);
     border-left: 3px solid var(--blue);
+
     border-radius: 8px;
 
     color: var(--gray);
+
     font-size: 14px;
+
     text-align: center;
+
+    line-height: 1.5;
+
+    transition: 0.2s ease;
+
 }
 
-/* 13. WEEK 12: PHOTO GALLERY */
+
+#hobby-list li:hover {
+
+    background-color: var(--blue);
+    color: var(--white);
+
+}
+
+
+/* 14. WEEK 12: PHOTO GALLERY */
+
+.gallery-section {
+
+    width: 100%;
+
+    margin-top: 10px;
+
+}
+
 
 .gallery-container {
+
     display: flex;
+
     justify-content: center;
     align-items: center;
 
     width: 100%;
     height: 300px;
+
     padding: 8px;
 
     background-color: #050505;
+
     border: 1px solid var(--border);
+
     border-radius: 10px;
 
     overflow: hidden;
+
 }
 
+
 #gallery-image {
+
     display: block;
+
     width: 100%;
     height: 100%;
 
@@ -370,168 +631,287 @@ hr {
     object-position: center;
 
     border-radius: 6px;
+
 }
+
 
 #photo-counter {
+
     margin: 14px 0;
+
     color: var(--gray);
+
     font-size: 13px;
+
     text-align: center;
+
 }
 
-/* 14. FOOTER */
+
+/* 15. FOOTER */
 
 footer {
+
     margin-top: 24px;
+
     text-align: center;
+
     color: #747B8B;
+
     font-size: 11px;
+
     line-height: 1.6;
+
 }
 
+
 footer p {
+
     margin-bottom: 0;
+
 }
+
 
 /* ========================================
    WEEK 11: DARK MODE
 ======================================== */
 
 body.dark-mode {
+
     background: #000000;
+
     color: #FFFFFF;
+
 }
+
 
 body.dark-mode .navigation {
+
     background-color: #050505;
+
     border-color: #444444;
+
 }
+
 
 body.dark-mode .business-card {
+
     background-color: #080808;
+
     border-color: #444444;
+
     border-top-color: var(--blue);
+
 }
+
 
 body.dark-mode .business-card.second-card {
+
     border-top-color: var(--bright-blue);
+
 }
+
 
 body.dark-mode .card-info {
+
     color: #D0D0D0;
+
 }
+
 
 body.dark-mode .location {
+
     color: #AAAAAA;
+
 }
 
+
 body.dark-mode .label {
+
     color: #8FA3FF;
+
 }
+
 
 body.dark-mode .contact-form,
 body.dark-mode #hobby-list li {
+
     background-color: #050505;
+
     border-color: #444444;
+
 }
+
 
 body.dark-mode .contact-form input {
+
     background-color: #111111;
+
     border-color: #444444;
+
     color: #FFFFFF;
+
 }
+
 
 body.dark-mode .contact-form input::placeholder {
+
     color: #999999;
+
 }
+
 
 body.dark-mode hr {
+
     border-top-color: #444444;
+
 }
+
 
 body.dark-mode footer {
+
     color: #999999;
+
 }
 
+
 /* ========================================
-   15. TABLET RESPONSIVE DESIGN
+   16. TABLET RESPONSIVE DESIGN
 ======================================== */
 
 @media (max-width: 700px) {
+
     body {
+
         padding: 20px 14px;
+
         gap: 20px;
+
     }
+
 
     .content-wrapper {
+
         flex-direction: column;
+
         align-items: center;
+
     }
+
 
     .business-card {
+
         width: 100%;
+
         max-width: 480px;
+
         flex: 1 1 auto;
+
         padding: 24px;
+
     }
+
 
     #profile-name {
+
         font-size: 29px;
+
     }
+
 
     #about-name {
+
         font-size: 26px;
+
     }
+
 }
 
+
 /* ========================================
-   16. SMALL MOBILE SCREENS
+   17. SMALL MOBILE SCREENS
 ======================================== */
 
 @media (max-width: 500px) {
+
     .navigation {
+
         justify-content: center;
+
         gap: 10px;
+
     }
+
 
     .nav-links {
+
         width: 100%;
+
     }
+
 
     #theme-toggle {
+
         width: 100%;
+
     }
+
 
     .business-card {
+
         padding: 20px;
+
     }
+
 
     .name-fields {
+
         grid-template-columns: 1fr;
+
     }
+
 
     .contact-form {
+
         padding: 14px;
+
     }
+
 
     .profile-image {
+
         width: 220px;
+
         height: 270px;
+
     }
+
 
     #profile-name {
+
         font-size: 26px;
+
     }
+
 
     #about-name {
+
         font-size: 24px;
+
     }
+
 
     #hobby-list ul {
+
         grid-template-columns: 1fr;
+
     }
 
+
     .gallery-container {
+
         height: 240px;
+
     }
+
 }
